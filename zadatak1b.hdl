@@ -1,0 +1,12 @@
+//1. zadatak b)
+
+CHIP zadatak1b {
+    IN x, y, z;
+    OUT out;
+
+    PARTS:
+    Not(in = y, out = Noty);
+
+    And(a = x, b = z, out = xAndz);
+    And(a = Noty, b = xAndz, out = NotyAndxAndz);
+}
